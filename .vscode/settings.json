@@ -3,5 +3,6 @@
         "cmath": "cpp",
         "limits": "c",
         "stdlib.h": "c"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
