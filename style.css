@@ -119,6 +119,7 @@ section h1{
 }
 .black:hover{
     opacity:0.5;
+    cursor:pointer;
 }
 .text-card{
     position:relative;
@@ -172,12 +173,12 @@ section h1{
     opacity:0.8;
 }
 .divs:hover{
-    border:5px solid white;
+    border:2px solid white;
+    cursor:pointer;
 }
 .divs img{
     position:absolute;
     top:40px;
-
     width:14px;
     height:14px;
     margin:30px 0px 0px 20px;
@@ -261,8 +262,8 @@ h2{
     background-color:#FAFBFC;
     border-radius:40px;
     padding:30px 25px 15px 25px;
+    transition:all 0.5s ease-in-out;
 }
-
 .price-header img{
     width:36px;
     height:36px;
@@ -340,6 +341,7 @@ Ul li::before{
     align-items:center;
     justify-content:center;
     border-radius:9999px;
+    transition:all 0.5s ease-in-out;
 }
 .down{
     margin-top:58px;
@@ -349,23 +351,23 @@ Ul li::before{
     width:34px;
     height:34px;
 }
-#first{
+.loc1{
     left:749px;
     top:230px;
 }
-#second{
+.loc2{
     left:952px;
     top:306px;
 }
-#third{
+.loc3{
     left:780px;
     top:428px;
 }
-#fourth{
+.loc4{
     left:1165px;
     top:445px;
 }
-#fifth{
+.loc5{
     left:952px;
     top:680px;
 }
@@ -384,11 +386,12 @@ footer div{
     gap:10px;
     top:50%;
 }
-.contact span{
+.contact a{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:18px;
     font-weight:bold;
     color:#6972B5;
+    text-decoration:none;
 }
 .contact img{
     width: 24px;
@@ -401,13 +404,39 @@ footer div{
 }
 .F{
     left:120px;
+    cursor:pointer;
 }
 .I{
     left:307px;
+    cursor:pointer;
 }
 .pins1{
-    width:369px;
-    height:369px;
+    width:250px;
+    height:250px;
     position:absolute;
-    opacity:0.1;
+    transform:translate(-25%, -25%);
+    opacity:0;
+}
+.div1:hover ~ .first-img{
+    opacity:1.0;
+}
+.div2:hover ~ .second-img{
+    opacity:1.0;
+}
+.div3:hover ~ .third-img{
+    opacity:1.0;
+}
+.div4:hover ~ .fourth-img{
+    opacity:1.0;
+}
+.div5:hover ~ .fifth-img{
+    opacity:1.0;
+}
+.price:hover > .button{
+    background-color:#000000;
+    color:white;
+    cursor:pointer;
+}
+.price:hover{
+    box-shadow:#708090 10px 10px, #36454F -10px -10px;
 }
